@@ -33,7 +33,6 @@ The app synchronizes data between local storage (using Realm) and a remote API (
     <img src="https://github.com/user-attachments/assets/68333ba6-bd4b-435b-b2e9-a04f97b31c85" alt="Vehicles List" width="250" height="550">
     <img src="https://github.com/user-attachments/assets/8e2774ff-be20-4585-8077-1815302704b7" alt="Vehicle Details" width="250" height="550">
 </div>
----
 
 
 
