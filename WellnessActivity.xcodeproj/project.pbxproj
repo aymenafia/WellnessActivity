@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E19232852DA7D4790025729E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E19232842DA7D4790025729E /* Moya */; };
+		E19232872DA7D4790025729E /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E19232862DA7D4790025729E /* RxMoya */; };
+		E192328A2DA7D4E80025729E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E19232892DA7D4E80025729E /* RealmSwift */; };
+		E19232952DA7D5380025729E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192328B2DA7D5380025729E /* AppDelegate.swift */; };
+		E19232962DA7D5380025729E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232922DA7D5380025729E /* SceneDelegate.swift */; };
+		E19232972DA7D5380025729E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232932DA7D5380025729E /* ViewController.swift */; };
+		E19232982DA7D5380025729E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E192328C2DA7D5380025729E /* Assets.xcassets */; };
+		E192329A2DA7D5380025729E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E192328F2DA7D5380025729E /* LaunchScreen.storyboard */; };
+		E192329E2DA7D5610025729E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192329D2DA7D55C0025729E /* Activity.swift */; };
+		E19232A22DA7D8360025729E /* ActivityRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232A12DA7D82B0025729E /* ActivityRepositoryProtocol.swift */; };
+		E19232A82DA7D9080025729E /* RealmActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232A72DA7D8FE0025729E /* RealmActivityRepository.swift */; };
+		E19232AA2DA7D9A90025729E /* ActivityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232A92DA7D9A00025729E /* ActivityAPI.swift */; };
+		E19232AC2DA7DD840025729E /* MoyaActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232AB2DA7DD830025729E /* MoyaActivityRepository.swift */; };
+		E19232AE2DA7DECD0025729E /* SyncActivityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232AD2DA7DECB0025729E /* SyncActivityRepository.swift */; };
+		E19232B32DA7DF260025729E /* ActivityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232B22DA7DF240025729E /* ActivityListViewModel.swift */; };
+		E19232B52DA7DF400025729E /* ActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19232B42DA7DF3F0025729E /* ActivityListViewController.swift */; };
+		E19232B82DA7DF6F0025729E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E19232B72DA7DF6F0025729E /* RxCocoa */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E19232662DA7D3AA0025729E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19232472DA7D3A70025729E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E192324E2DA7D3A70025729E;
+			remoteInfo = WellnessActivity;
+		};
+		E19232702DA7D3AA0025729E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19232472DA7D3A70025729E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E192324E2DA7D3A70025729E;
+			remoteInfo = WellnessActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E192324F2DA7D3A70025729E /* WellnessActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellnessActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19232652DA7D3AA0025729E /* WellnessActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellnessActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E192326F2DA7D3AA0025729E /* WellnessActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellnessActivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E192328B2DA7D5380025729E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E192328C2DA7D5380025729E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E192328D2DA7D5380025729E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E192328E2DA7D5380025729E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E19232922DA7D5380025729E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E19232932DA7D5380025729E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E192329D2DA7D55C0025729E /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		E19232A12DA7D82B0025729E /* ActivityRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E19232A72DA7D8FE0025729E /* RealmActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmActivityRepository.swift; sourceTree = "<group>"; };
+		E19232A92DA7D9A00025729E /* ActivityAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAPI.swift; sourceTree = "<group>"; };
+		E19232AB2DA7DD830025729E /* MoyaActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaActivityRepository.swift; sourceTree = "<group>"; };
+		E19232AD2DA7DECB0025729E /* SyncActivityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncActivityRepository.swift; sourceTree = "<group>"; };
+		E19232B22DA7DF240025729E /* ActivityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewModel.swift; sourceTree = "<group>"; };
+		E19232B42DA7DF3F0025729E /* ActivityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E19232682DA7D3AA0025729E /* WellnessActivityTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WellnessActivityTests;
+			sourceTree = "<group>";
+		};
+		E19232722DA7D3AA0025729E /* WellnessActivityUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WellnessActivityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E192324C2DA7D3A70025729E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E192328A2DA7D4E80025729E /* RealmSwift in Frameworks */,
+				E19232872DA7D4790025729E /* RxMoya in Frameworks */,
+				E19232B82DA7DF6F0025729E /* RxCocoa in Frameworks */,
+				E19232852DA7D4790025729E /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19232622DA7D3AA0025729E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192326C2DA7D3AA0025729E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E19232462DA7D3A70025729E = {
+			isa = PBXGroup;
+			children = (
+				E19232942DA7D5380025729E /* WellnessActivity */,
+				E19232682DA7D3AA0025729E /* WellnessActivityTests */,
+				E19232722DA7D3AA0025729E /* WellnessActivityUITests */,
+				E19232502DA7D3A70025729E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E19232502DA7D3A70025729E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E192324F2DA7D3A70025729E /* WellnessActivity.app */,
+				E19232652DA7D3AA0025729E /* WellnessActivityTests.xctest */,
+				E192326F2DA7D3AA0025729E /* WellnessActivityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E19232942DA7D5380025729E /* WellnessActivity */ = {
+			isa = PBXGroup;
+			children = (
+				E19232AF2DA7DF020025729E /* Presentation */,
+				E19232A32DA7D8C40025729E /* Data */,
+				E192329F2DA7D8080025729E /* Domain */,
+				E192328B2DA7D5380025729E /* AppDelegate.swift */,
+				E192328C2DA7D5380025729E /* Assets.xcassets */,
+				E192328D2DA7D5380025729E /* Info.plist */,
+				E192328F2DA7D5380025729E /* LaunchScreen.storyboard */,
+				E19232922DA7D5380025729E /* SceneDelegate.swift */,
+				E19232932DA7D5380025729E /* ViewController.swift */,
+			);
+			path = WellnessActivity;
+			sourceTree = "<group>";
+		};
+		E192329C2DA7D5490025729E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E192329D2DA7D55C0025729E /* Activity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E192329F2DA7D8080025729E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E19232A02DA7D81E0025729E /* Protocols */,
+				E192329C2DA7D5490025729E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E19232A02DA7D81E0025729E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E19232A12DA7D82B0025729E /* ActivityRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E19232A32DA7D8C40025729E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E19232A62DA7D8E90025729E /* Local */,
+				E19232A52DA7D8DD0025729E /* Remote */,
+				E19232A42DA7D8D00025729E /* Sync */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E19232A42DA7D8D00025729E /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				E19232AD2DA7DECB0025729E /* SyncActivityRepository.swift */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		E19232A52DA7D8DD0025729E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				E19232AB2DA7DD830025729E /* MoyaActivityRepository.swift */,
+				E19232A92DA7D9A00025729E /* ActivityAPI.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		E19232A62DA7D8E90025729E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E19232A72DA7D8FE0025729E /* RealmActivityRepository.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E19232AF2DA7DF020025729E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E19232B12DA7DF190025729E /* ViewModels */,
+				E19232B02DA7DF0F0025729E /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E19232B02DA7DF0F0025729E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19232B42DA7DF3F0025729E /* ActivityListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E19232B12DA7DF190025729E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E19232B22DA7DF240025729E /* ActivityListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E192324E2DA7D3A70025729E /* WellnessActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19232782DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivity" */;
+			buildPhases = (
+				E192324B2DA7D3A70025729E /* Sources */,
+				E192324C2DA7D3A70025729E /* Frameworks */,
+				E192324D2DA7D3A70025729E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WellnessActivity;
+			packageProductDependencies = (
+				E19232842DA7D4790025729E /* Moya */,
+				E19232862DA7D4790025729E /* RxMoya */,
+				E19232892DA7D4E80025729E /* RealmSwift */,
+				E19232B72DA7DF6F0025729E /* RxCocoa */,
+			);
+			productName = WellnessActivity;
+			productReference = E192324F2DA7D3A70025729E /* WellnessActivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E19232642DA7D3AA0025729E /* WellnessActivityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E192327D2DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivityTests" */;
+			buildPhases = (
+				E19232612DA7D3AA0025729E /* Sources */,
+				E19232622DA7D3AA0025729E /* Frameworks */,
+				E19232632DA7D3AA0025729E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E19232672DA7D3AA0025729E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E19232682DA7D3AA0025729E /* WellnessActivityTests */,
+			);
+			name = WellnessActivityTests;
+			packageProductDependencies = (
+			);
+			productName = WellnessActivityTests;
+			productReference = E19232652DA7D3AA0025729E /* WellnessActivityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E192326E2DA7D3AA0025729E /* WellnessActivityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19232802DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivityUITests" */;
+			buildPhases = (
+				E192326B2DA7D3AA0025729E /* Sources */,
+				E192326C2DA7D3AA0025729E /* Frameworks */,
+				E192326D2DA7D3AA0025729E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E19232712DA7D3AA0025729E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E19232722DA7D3AA0025729E /* WellnessActivityUITests */,
+			);
+			name = WellnessActivityUITests;
+			packageProductDependencies = (
+			);
+			productName = WellnessActivityUITests;
+			productReference = E192326F2DA7D3AA0025729E /* WellnessActivityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E19232472DA7D3A70025729E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					E192324E2DA7D3A70025729E = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E19232642DA7D3AA0025729E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E192324E2DA7D3A70025729E;
+					};
+					E192326E2DA7D3AA0025729E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E192324E2DA7D3A70025729E;
+					};
+				};
+			};
+			buildConfigurationList = E192324A2DA7D3A70025729E /* Build configuration list for PBXProject "WellnessActivity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E19232462DA7D3A70025729E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E19232832DA7D4790025729E /* XCRemoteSwiftPackageReference "Moya" */,
+				E19232882DA7D4E80025729E /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				E19232B62DA7DF6F0025729E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E19232502DA7D3A70025729E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E192324E2DA7D3A70025729E /* WellnessActivity */,
+				E19232642DA7D3AA0025729E /* WellnessActivityTests */,
+				E192326E2DA7D3AA0025729E /* WellnessActivityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E192324D2DA7D3A70025729E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19232982DA7D5380025729E /* Assets.xcassets in Resources */,
+				E192329A2DA7D5380025729E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19232632DA7D3AA0025729E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192326D2DA7D3AA0025729E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E192324B2DA7D3A70025729E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E192329E2DA7D5610025729E /* Activity.swift in Sources */,
+				E19232AA2DA7D9A90025729E /* ActivityAPI.swift in Sources */,
+				E19232952DA7D5380025729E /* AppDelegate.swift in Sources */,
+				E19232AE2DA7DECD0025729E /* SyncActivityRepository.swift in Sources */,
+				E19232B52DA7DF400025729E /* ActivityListViewController.swift in Sources */,
+				E19232A82DA7D9080025729E /* RealmActivityRepository.swift in Sources */,
+				E19232A22DA7D8360025729E /* ActivityRepositoryProtocol.swift in Sources */,
+				E19232B32DA7DF260025729E /* ActivityListViewModel.swift in Sources */,
+				E19232962DA7D5380025729E /* SceneDelegate.swift in Sources */,
+				E19232AC2DA7DD840025729E /* MoyaActivityRepository.swift in Sources */,
+				E19232972DA7D5380025729E /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19232612DA7D3AA0025729E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E192326B2DA7D3AA0025729E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E19232672DA7D3AA0025729E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E192324E2DA7D3A70025729E /* WellnessActivity */;
+			targetProxy = E19232662DA7D3AA0025729E /* PBXContainerItemProxy */;
+		};
+		E19232712DA7D3AA0025729E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E192324E2DA7D3A70025729E /* WellnessActivity */;
+			targetProxy = E19232702DA7D3AA0025729E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E192328F2DA7D5380025729E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E192328E2DA7D5380025729E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E19232792DA7D3AA0025729E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellnessActivity/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E192327A2DA7D3AA0025729E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellnessActivity/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E192327B2DA7D3AA0025729E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E192327C2DA7D3AA0025729E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E192327E2DA7D3AA0025729E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellnessActivity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellnessActivity";
+			};
+			name = Debug;
+		};
+		E192327F2DA7D3AA0025729E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellnessActivity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellnessActivity";
+			};
+			name = Release;
+		};
+		E19232812DA7D3AA0025729E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WellnessActivity;
+			};
+			name = Debug;
+		};
+		E19232822DA7D3AA0025729E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.WellnessActivityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WellnessActivity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E192324A2DA7D3A70025729E /* Build configuration list for PBXProject "WellnessActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E192327B2DA7D3AA0025729E /* Debug */,
+				E192327C2DA7D3AA0025729E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E19232782DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19232792DA7D3AA0025729E /* Debug */,
+				E192327A2DA7D3AA0025729E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E192327D2DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E192327E2DA7D3AA0025729E /* Debug */,
+				E192327F2DA7D3AA0025729E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E19232802DA7D3AA0025729E /* Build configuration list for PBXNativeTarget "WellnessActivityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19232812DA7D3AA0025729E /* Debug */,
+				E19232822DA7D3AA0025729E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E19232832DA7D4790025729E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.3;
+			};
+		};
+		E19232882DA7D4E80025729E /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E19232B62DA7DF6F0025729E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E19232842DA7D4790025729E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19232832DA7D4790025729E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E19232862DA7D4790025729E /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19232832DA7D4790025729E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		E19232892DA7D4E80025729E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19232882DA7D4E80025729E /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		E19232B72DA7DF6F0025729E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19232B62DA7DF6F0025729E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E19232472DA7D3A70025729E /* Project object */;
+}
