@@ -100,8 +100,5 @@ Below is the **UML Component Diagram** for the project:
    git clone git@github.com:aymenafia/WellnessActivity.git
    cd WellnessActivity
 
-     ### 🖼 UML Component Diagram
-
-
 
 
