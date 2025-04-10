@@ -96,3 +96,11 @@ The project follows a **Clean Architecture** approach separated into three main 
    ```bash
    git clone git@github.com:aymenafia/WellnessActivity.git
    cd WellnessActivity
+
+     ### 🖼 UML Component Diagram
+
+Below is the **UML Component Diagram** for the project:
+
+<img src="https://github.com/user-attachments/assets/b13c70aa-4b40-404f-927c-b01f4c58ab7c" alt="" width="800" height="1300">
+
+
