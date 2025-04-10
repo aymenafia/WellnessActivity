@@ -87,6 +87,9 @@ The project follows a **Clean Architecture** approach separated into three main 
 - **Clean Architecture & SOLID Principles:**  
   The separation of concerns across Domain, Data, and Presentation layers simplifies maintenance, enhances testability, and eases future modifications.
 
+Below is the **UML Component Diagram** for the project:
+
+<img src="https://github.com/user-attachments/assets/b13c70aa-4b40-404f-927c-b01f4c58ab7c" alt="" width="800" height="800">
 ---
 
 ## Setup Instructions
@@ -99,8 +102,6 @@ The project follows a **Clean Architecture** approach separated into three main 
 
      ### 🖼 UML Component Diagram
 
-Below is the **UML Component Diagram** for the project:
 
-<img src="https://github.com/user-attachments/assets/b13c70aa-4b40-404f-927c-b01f4c58ab7c" alt="" width="800" height="1300">
 
 
