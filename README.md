@@ -1,5 +1,6 @@
 # WellnessActivity
-
+![Swift](https://img.shields.io/badge/Language-Swift-orange)
+![Xcode 16](https://img.shields.io/badge/IDE-Xcode%2016-blue)
 
 The application demonstrates the use of modern libraries and frameworks such as RxSwift, RxCocoa, Realm, and Moya (with RxMoya extensions) to provide a reactive, persistent, and networked solution while maintaining a clear separation of concerns.
 
@@ -28,8 +29,13 @@ The application demonstrates the use of modern libraries and frameworks such as 
 - Delete activities.
 
 The app synchronizes data between local storage (using Realm) and a remote API (using Moya) while using RxSwift/RxCocoa to manage asynchronous operations and bindings.
-
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/68333ba6-bd4b-435b-b2e9-a04f97b31c85" alt="Vehicles List" width="250" height="550">
+    <img src="https://github.com/user-attachments/assets/8e2774ff-be20-4585-8077-1815302704b7" alt="Vehicle Details" width="250" height="550">
+</div>
 ---
+
+
 
 ## Architecture
 
